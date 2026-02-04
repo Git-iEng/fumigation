@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Boilers</title>
+
+  <title>Green Fumigation Machine</title>
+  <meta name="description"
+        content="Chemical-free heat-treatment fumigation for food & industrial facilities. Maintain 50–60°C for 24–48 hours using modular hot-air blowers, power distribution and ground fans." />
 
   <!-- Google Tag Manager -->
   <script>
@@ -27,8 +30,8 @@
   <link rel="stylesheet" href="{% static 'css/consult-block.css' %}">
   <link rel="stylesheet" href="{% static 'css/footer.css' %}">
 
-  <!-- Boiler-specific CSS -->
-  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="{% static 'css/fumigation.css' %}">
 
   <link rel="icon" href="{% static 'images/logo1.png' %}">
   <link rel="stylesheet"
@@ -43,380 +46,401 @@
             width="0"
             style="display:none;visibility:hidden"></iframe>
   </noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
   {% include 'header.html' %}
   {% include 'request_demo_modal.html' %}
 
-  <!-- ============ HERO ============ -->
-  <section class="bo-hero" id="home">
-    <div class="bo-container">
-      <div class="bo-hero-inner">
+  <main class="fu-page">
 
-        <div class="bo-hero-left bo-reveal">
-          <div class="bo-hero-kicker">
-            <span>Steam &amp; Hot Water Systems</span>
-          </div>
+    <!-- ================= HERO ================= -->
+    <section class="fu-hero" id="home">
+      <div class="fu-container">
+        <div class="fu-hero-grid">
 
-          <h1 class="bo-hero-title">
-            Industrial <span>Boilers</span> for Reliable Process &amp; Building Heat
-          </h1>
-
-          <p class="bo-hero-sub">
-            A boiler is a closed vessel used to heat water and generate steam or hot water for industrial and
-            commercial applications—from space heating and process steam to power generation and sterilisation.
-          </p>
-          <p class="bo-hero-sub">
-            iEngineering supports boiler deployments for food processing, chemical plants, sugar mills, textile
-            facilities, healthcare, paper mills and FMCG industries across Australia, Fiji, India and the Pacific.
-          </p>
-
-          <div class="bo-hero-cta">
-            <a href="#types" class="bo-btn-primary">View Boiler Types</a>
-            <a href="#contact" class="bo-btn-ghost js-open-demo">Submit Boiler Enquiry</a>
-          </div>
-
-          <div class="bo-hero-stats">
-            <div class="bo-stat">
-              <div class="bo-stat-label">Regions</div>
-              <div class="bo-stat-value">AU • Fiji • India</div>
+          <!-- LEFT -->
+          <div class="fu-hero-left fu-reveal">
+            <div class="fu-badges">
+              <span class="fu-badge"><i class="fa-solid fa-leaf"></i> Chemical-free</span>
+              <span class="fu-badge"><i class="fa-solid fa-shield-heart"></i> Food-safe approach</span>
+              <span class="fu-badge"><i class="fa-solid fa-bolt"></i> Plug &amp; Play Modular</span>
             </div>
-            <div class="bo-stat">
-              <div class="bo-stat-label">Applications</div>
-              <div class="bo-stat-value">Process &amp; HVAC</div>
+
+            <h1 class="fu-h1">
+              Heat Treatment <span>Green Fumigation</span> Machine
+              <small>Advanced Pest Control for Food &amp; Industrial Facilities</small>
+            </h1>
+
+            <p class="fu-lead">
+              Heat treatment eliminates insects across life stages through
+              <strong>protein denaturation</strong>, <strong>loss of enzyme activity</strong>, and
+              <strong>desiccation</strong> without chemical residues.
+            </p>
+
+            {% comment %} <div class="fu-kpis">
+              <div class="fu-kpi">
+                <div class="fu-kpi-label">Target Range</div>
+                <div class="fu-kpi-value">50–60°C</div>
+              </div>
+              <div class="fu-kpi">
+                <div class="fu-kpi-label">Typical Duration</div>
+                <div class="fu-kpi-value">24–48 hrs</div>
+              </div>
+              <div class="fu-kpi">
+                <div class="fu-kpi-label">Use Cases</div>
+                <div class="fu-kpi-value">Food • Hospitality • Warehousing</div>
+              </div>
+            </div> {% endcomment %}
+
+            <div class="fu-cta">
+              <a class="fu-btn fu-btn-primary" href="#types">
+                Explore Equipment <i class="fa-solid fa-arrow-right-long"></i>
+              </a>
+              <a class="fu-btn fu-btn-ghost js-open-demo" href="#contact">
+                Submit Inquiry
+              </a>
+              {% comment %} <a class="fu-btn fu-btn-link"
+                 href="https://ieng.tech/static/images/flyer/hardware/supplies/fumigation.pdf"
+                 target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-arrow-down"></i> Download Flyer
+              </a> {% endcomment %}
+            </div>
+
+            <div class="fu-trust">
+              <div class="fu-trust-item"><i class="fa-solid fa-check"></i> Factory hygiene improvement</div>
+              <div class="fu-trust-item"><i class="fa-solid fa-check"></i> Minimised power consumption via recirculating hot air</div>
+              <div class="fu-trust-item"><i class="fa-solid fa-check"></i> Sustainable alternative to chemical fumigants</div>
             </div>
           </div>
+
+          <!-- RIGHT -->
+          <div class="fu-hero-right fu-reveal">
+            <div class="fu-hero-media">
+
+              <div class="fu-hero-card">
+                <div class="fu-hero-img">
+                  <img
+                    src="./static/images/pic1.avif"
+                    alt="Amber Storm hot air blower"
+                  />
+                  
+                </div>
+
+                <div class="fu-hero-card-body">
+                  <h3>Uniform Temperature Distribution</h3>
+                  <p>
+                    Modular wheel-mounted heaters with thermostat control help achieve stable heat throw and uniform
+                    treatment coverage.
+                  </p>
+                  
+                </div>
+              </div>
+
+              <!-- FIXED: No more huge empty rounded area -->
+              {% comment %} <div class="fu-hero-bento">
+                <div class="fu-bento-head">
+                  <h4>Included Modules</h4>
+                  <p>Scale airflow + power distribution based on facility size and layout.</p>
+                </div>
+
+                <div class="fu-bento-grid">
+                  <a class="fu-bento-item" href="#types">
+                    <img src="https://ieng.tech/static/images/hardware/supplies/fumigation/image3.png"
+                         alt="Power Distribution" />
+                    <div>
+                      <strong>Power Distribution</strong>
+                      <span>Compatible connections + scalable deployment</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+
+                  <a class="fu-bento-item" href="#types">
+                    <img src="https://ieng.tech/static/images/hardware/supplies/fumigation/image2.png"
+                         alt="Ground Fan" />
+                    <div>
+                      <strong>Ground Fan</strong>
+                      <span>Air recirculation to avoid temperature stratification</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
+              </div> {% endcomment %}
+
+            </div>
+          </div>
+
         </div>
-
-        <div class="bo-hero-media bo-reveal">
-          <div class="bo-hero-card">
-            <div class="bo-hero-image-wrap">
-              <!-- Replace with boiler-specific hero image when available -->
-              <img src="{% static 'images/boiler.avif' %}" alt="Industrial boiler and steam header in plant" />
-
-              <div class="bo-hero-pill">Typical steam boiler installation</div>
-            </div>
-            <div class="bo-hero-meta">
-              <h3>Flexible Integration</h3>
-              <p>
-                Support for low, medium and high-pressure boiler systems, burners, pumps, controls and safety
-                devices tailored to your process.
-              </p>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ OVERVIEW ============ -->
+    <!-- ================= CONCEPT ================= -->
+    <section class="fu-section" id="concept">
+      <div class="fu-container fu-reveal">
+        <div class="fu-section-head">
+          <p class="fu-eyebrow">Concept</p>
+          <h2 class="fu-h2">What is “Green Fumigation”?</h2>
+          <p class="fu-sub">
+            A heat-based pest control method that eliminates insects using controlled temperature and time supporting
+            cleaner operations and safer environments.
+          </p>
+        </div>
+
+        <div class="fu-grid-2">
+          <div class="fu-card">
+            <h3 class="fu-h3"><i class="fa-solid fa-bug-slash"></i> How heat kills pests</h3>
+            <p>
+              Heat treatment causes insect mortality through <strong>denaturation of proteins</strong>,
+              <strong>loss of enzyme activity</strong>, and <strong>desiccation</strong>.
+            </p>
+            <ul class="fu-list">
+              <li>Effective across life stages when exposure is maintained</li>
+              <li>No chemical residues on surfaces and equipment</li>
+              <li>Supports hygiene and quality assurance in production areas</li>
+            </ul>
+          </div>
+
+          <div class="fu-card fu-card-accent">
+            <h3 class="fu-h3"><i class="fa-solid fa-hand-holding-heart"></i> Our approach</h3>
+            <p>
+              We focus on protecting your environment and health by providing an environmentally friendly fumigation solution.
+            </p>
+
+            <div class="fu-split-kpis">
+              <div>
+                <div class="fu-split-label">Typical treatment window</div>
+                <div class="fu-split-value">50–60°C</div>
+              </div>
+              <div>
+                <div class="fu-split-label">Typical holding time</div>
+                <div class="fu-split-value">24–48 hours</div>
+              </div>
+              <div>
+                <div class="fu-split-label">Deployment model</div>
+                <div class="fu-split-value">Modular • Mobile • Plug &amp; Play</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES (matches header) ================= -->
+    <section class="fu-section fu-section-soft" id="services">
+      <div class="fu-container">
+        <div class="fu-section-head fu-reveal">
+          <p class="fu-eyebrow">Services</p>
+          <h2 class="fu-h2">What iEngineering provides</h2>
+          <p class="fu-sub">
+            From equipment supply to site deployment planning built for repeatability and operational comfort.
+          </p>
+        </div>
+
+        <div class="fu-services-grid">
+          <article class="fu-service fu-reveal">
+            <div class="fu-service-ic"><i class="fa-solid fa-clipboard-check"></i></div>
+            <h3>Site assessment</h3>
+            <p>Review facility size, insulation, airflow pathways and cold spots to guide equipment sizing.</p>
+          </article>
+
+          <article class="fu-service fu-reveal">
+            <div class="fu-service-ic"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+            <h3>Plug &amp; play deployment</h3>
+            <p>Modular equipment with practical setup approach for warehouses and industrial environments.</p>
+          </article>
+
+          <article class="fu-service fu-reveal">
+            <div class="fu-service-ic"><i class="fa-solid fa-temperature-high"></i></div>
+            <h3>Heat cycle guidance</h3>
+            <p>Support for achieving target temperature distribution and holding time for effective treatment.</p>
+          </article>
+
+          <article class="fu-service fu-reveal">
+            <div class="fu-service-ic"><i class="fa-solid fa-file-lines"></i></div>
+            <h3>Documentation support</h3>
+            <p>Basic checklists + repeatable workflow to assist your operational teams.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TIME–TEMPERATURE ================= -->
+    <section class="fu-section" id="time-temp">
+      <div class="fu-container">
+        <div class="fu-section-head fu-reveal">
+          <p class="fu-eyebrow">Time–Temperature Function</p>
+          <h2 class="fu-h2">Why temperature + exposure time matters</h2>
+          <p class="fu-sub">
+            Reliable results require both reaching target temperature and maintaining it long enough for full kill.
+          </p>
+        </div>
+
+        <div class="fu-grid-2 fu-align-center">
+          <div class="fu-media-card fu-reveal">
+            <img
+              src="./static/images/pic3.avif"
+              alt="Time-temperature function chart" />
+            <!-- FIXED: small overlay chip instead of huge bottom bar -->
+            
+          </div>
+
+          <div class="fu-card fu-reveal">
+            <h3 class="fu-h3"><i class="fa-solid fa-temperature-high"></i> Practical guidance (visual summary)</h3>
+
+            <div class="fu-table">
+              <div class="fu-row"><span class="fu-cell fu-strong">60°C</span><span class="fu-cell">Death in minutes</span></div>
+              <div class="fu-row"><span class="fu-cell fu-strong">50°C</span><span class="fu-cell">Death in a day (typical)</span></div>
+              <div class="fu-row"><span class="fu-cell fu-strong">30°C</span><span class="fu-cell">Suitable for growth</span></div>
+              <div class="fu-row"><span class="fu-cell fu-strong">0°C</span><span class="fu-cell">Death in months</span></div>
+              <div class="fu-row"><span class="fu-cell fu-strong">−30°C</span><span class="fu-cell">Death in minutes</span></div>
+            </div>
+
+            <div class="fu-note">
+              <i class="fa-solid fa-circle-info"></i>
+              Heat treatment commonly maintains <strong>50–60°C</strong> for <strong>24–48 hours</strong> in facilities.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WORKFLOW (matches header) ================= -->
+    <section class="fu-section" id="workflow">
+      <div class="fu-container">
+        <div class="fu-section-head fu-reveal">
+          <p class="fu-eyebrow">Workflow</p>
+          <h2 class="fu-h2">How the heat-treatment cycle is executed</h2>
+          <p class="fu-sub">
+            A structured workflow ensures consistent temperature distribution, prevents stratification, and supports repeatability.
+          </p>
+        </div>
+
+        <div class="fu-process-grid">
+          <div class="fu-steps fu-reveal">
+
+            <div class="fu-step">
+              <div class="fu-step-num">1</div>
+              <div class="fu-step-body">
+                <h3>Cleaning &amp; Sealing</h3>
+                <p>Clean the area thoroughly. Focus on pest hiding and egg-laying spots and limit air leaks.</p>
+              </div>
+            </div>
+
+            <div class="fu-step">
+              <div class="fu-step-num">2</div>
+              <div class="fu-step-body">
+                <h3>Equipment Setup</h3>
+                <p>Deploy hot air blowers, power distribution and recirculation fans to avoid cold spots.</p>
+              </div>
+            </div>
+
+            <div class="fu-step">
+              <div class="fu-step-num">3</div>
+              <div class="fu-step-body">
+                <h3>Start-up</h3>
+                <p>Bring the facility to target temperature and stabilise airflow distribution.</p>
+              </div>
+            </div>
+
+            <div class="fu-step">
+              <div class="fu-step-num">4</div>
+              <div class="fu-step-body">
+                <h3>Monitoring &amp; Adjustment</h3>
+                <p>Maintain 50–60°C for 24–48 hours. Adjust airflow/ducting to prevent stratification.</p>
+              </div>
+            </div>
+
+            <div class="fu-step">
+              <div class="fu-step-num">5</div>
+              <div class="fu-step-body">
+                <h3>Cooling &amp; Cleaning</h3>
+                <p>Controlled cool-down and post-treatment cleaning before returning the space to service.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="fu-process-visual fu-reveal">
+            <div class="fu-media-card">
+              <img
+                src="./static/images/pic2.avif"
+                alt="Process diagram"
+              />
+            </div>
+
+            
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TYPES (matches header) ================= -->
+    <section class="fu-section fu-section-dark" id="types">
+      <div class="fu-container">
+        
+        <div class="fu-section-head fu-reveal">
+          <p class="fu-eyebrow">Applications</p>
+          <h2 class="fu-h2" style="color:white;">Where it’s used</h2>
+          <p class="fu-sub">
+            Suitable for sectors where clean pest control is preferred.
+          </p>
+        </div>
+
+        <div class="fu-app-grid">
+          <div class="fu-app-card fu-reveal"><h3 style="color:black;">Food Sectors</h3><p>Food processing, farming, mills, and bakeries.</p></div>
+          <div class="fu-app-card fu-reveal"><h3 style="color:black;">Animal Food</h3><p>Pet food and animal feed industries.</p></div>
+          <div class="fu-app-card fu-reveal"><h3 style="color:black;">Bed Bugs</h3><p>Residential, dormitories, and institutions.</p></div>
+          <div class="fu-app-card fu-reveal"><h3 style="color:black;">Hospitality</h3><p>Hotels, motels, and youth hostels.</p></div>
+          <div class="fu-app-card fu-reveal"><h3 style="color:black;">Travel</h3><p>Trains, airplanes, and vehicles.</p></div>
+          <div class="fu-app-card fu-reveal"><h3 style="color:black;">Non-food</h3><p>Tobacco, textiles, and retail stores.</p></div>
+        </div>
+        
+
+        
+      </div>
+    </section>
+
+    <!-- ================= APPLICATIONS ================= -->
+    {% comment %} <section class="fu-section" id="applications">
+      <div class="fu-container">
+        <div class="fu-section-head fu-reveal">
+          <p class="fu-eyebrow">Applications</p>
+          <h2 class="fu-h2">Where it’s used</h2>
+          <p class="fu-sub">
+            Suitable for sectors where clean pest control is preferred.
+          </p>
+        </div>
+
+        <div class="fu-app-grid">
+          <div class="fu-app-card fu-reveal"><h3>Food Sectors</h3><p>Food processing, farming, mills, and bakeries.</p></div>
+          <div class="fu-app-card fu-reveal"><h3>Animal Food</h3><p>Pet food and animal feed industries.</p></div>
+          <div class="fu-app-card fu-reveal"><h3>Bed Bugs</h3><p>Residential, dormitories, and institutions.</p></div>
+          <div class="fu-app-card fu-reveal"><h3>Hospitality</h3><p>Hotels, motels, and youth hostels.</p></div>
+          <div class="fu-app-card fu-reveal"><h3>Travel</h3><p>Trains, airplanes, and vehicles.</p></div>
+          <div class="fu-app-card fu-reveal"><h3>Non-food</h3><p>Tobacco, textiles, and retail stores.</p></div>
+        </div>
+      </div>
+    </section> {% endcomment %}
+
+    <!-- ================= FAQ ================= -->
+    
+
+    <!-- ================= ABOUT (matches header) ================= -->
+    <section id="about" class="cmms-contact-form-wrap">
+      <div class="cmms-contact-form-inner">
+        <p class="eyebrow-neplan-what-we-bring">About</p>
+        <h2 class="title-meet-ieng-about">About us – where vision meets execution!</h2>
+        <p class="about-text-abou-ieng">
+          iEngineering delivers practical, high-quality solutions across industrial hardware, energy systems and specialised machinery.
+          Our heat-treatment Green Fumigation solution supports clean pest control for food and industrial environments backed by engineering capability and reliable deployment support.
+        </p>
+      </div>
+    </section>
+    <!-- ============ ABOUT ============ -->
   
 
-  <!-- ============ TYPES / CLASSIFICATION ============ -->
-  <section class="bo-types" id="types">
-    <div class="bo-container">
-      <div class="bo-types-head">
-        <div>
-          <div class="bo-types-kicker">Boiler classification</div>
-          <h2 class="bo-types-title">Boiler Types &amp; Operating Characteristics</h2>
-        </div>
-        <p class="bo-types-sub">
-          Boilers are classified by gas and water flow paths, circulation method, operating pressure,
-          orientation and application. We align these technical characteristics to your thermal demand and process.
-        </p>
-      </div>
-
-      <div class="bo-types-grid">
-
-        <article class="bo-type-card bo-reveal">
-          <div class="bo-type-tag">
-            <span>Flow path</span>
-          </div>
-          <h3 class="bo-type-title">Water-Tube Boilers</h3>
-          <p class="bo-type-text">
-            Water flows inside tubes while hot gases pass over them. Suitable for higher pressures and larger
-            steam capacities—used in power plants, refineries and major process industries.
-          </p>
-          <div class="bo-type-meta">
-            <span>High pressure</span>
-            <span>Large capacity</span>
-          </div>
-        </article>
-
-        <article class="bo-type-card bo-reveal">
-          <div class="bo-type-tag">
-            <span>Flow path</span>
-          </div>
-          <h3 class="bo-type-title">Fire-Tube Boilers</h3>
-          <p class="bo-type-text">
-            Hot gases flow through tubes immersed in water. Compact and robust, they are ideal for low and
-            medium-pressure steam and hot water in food, textile, healthcare and commercial buildings.
-          </p>
-          <div class="bo-type-meta">
-            <span>Compact</span>
-            <span>Low/medium pressure</span>
-          </div>
-        </article>
-
-        <article class="bo-type-card bo-reveal">
-          <div class="bo-type-tag">
-            <span>Energy source</span>
-          </div>
-          <h3 class="bo-type-title">Electric Boilers</h3>
-          <p class="bo-type-text">
-            Use electrical energy to generate steam or hot water. A clean option where flue emissions are restricted,
-            or where electricity tariffs favour electric heating for smaller loads.
-          </p>
-          <div class="bo-type-meta">
-            <span>Zero on-site emissions</span>
-            <span>Quiet operation</span>
-          </div>
-        </article>
-
-        <article class="bo-type-card bo-reveal">
-          <div class="bo-type-tag">
-            <span>Pressure</span>
-          </div>
-          <h3 class="bo-type-title">Low, Medium &amp; High-Pressure</h3>
-          <p class="bo-type-text">
-            Solutions for low-pressure heating systems, medium-pressure process steam and high-pressure or
-            supercritical units for power generation and demanding industrial duties.
-          </p>
-          <div class="bo-type-meta">
-            <span>Heating &amp; process</span>
-            <span>Power generation</span>
-          </div>
-        </article>
-
-        <article class="bo-type-card bo-reveal">
-          <div class="bo-type-tag">
-            <span>Circulation</span>
-          </div>
-          <h3 class="bo-type-title">Natural &amp; Forced Circulation</h3>
-          <p class="bo-type-text">
-            Both buoyancy-driven (natural) and pump-driven (forced) circulation boilers are deployed based on height,
-            layout, pressure requirements and response time.
-          </p>
-          <div class="bo-type-meta">
-            <span>Stable operation</span>
-            <span>Process responsive</span>
-          </div>
-        </article>
-
-        <article class="bo-type-card bo-reveal">
-          <div class="bo-type-tag">
-            <span>Application</span>
-          </div>
-          <h3 class="bo-type-title">Stationary, Portable &amp; Marine</h3>
-          <p class="bo-type-text">
-            Stationary plant boilers, portable units for temporary or remote sites, locomotive and marine boilers,
-            configured with the right mounting, orientation and controls.
-          </p>
-          <div class="bo-type-meta">
-            <span>Site-specific</span>
-            <span>Flexible deployment</span>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="bo-overview" id="overview">
-    <div class="bo-container">
-      <div class="bo-overview-grid">
-
-        <div class="bo-overview-main bo-reveal">
-          <p class="bo-eyebrow">What we provide</p>
-          <h2 class="bo-section-title">
-            Complete Boiler Solutions – From Selection to Commissioning
-          </h2>
-          <p class="bo-section-text">
-            We help you define thermal loads, select the right boiler type and pressure range,
-            and coordinate supply, installation support and integration with your wider plant.
-          </p>
-          <p class="bo-section-text">
-            Our team works across new installations, replacement units and efficiency upgrades,
-            considering fuel type, emissions, safety standards and lifecycle operating costs.
-          </p>
-
-          <ul class="bo-check-list">
-            <li>
-              <span class="bo-check-dot"></span>
-              Fire-tube, water-tube and electric boiler options
-            </li>
-            <li>
-              <span class="bo-check-dot"></span>
-              Steam &amp; hot water systems for process and building services
-            </li>
-            <li>
-              <span class="bo-check-dot"></span>
-              Burner, pump, valve, control and safety integration
-            </li>
-            <li>
-              <span class="bo-check-dot"></span>
-              Support across Australia, Fiji, India &amp; the Pacific
-            </li>
-          </ul>
-        </div>
-
-         <!-- Right: real boiler photo -->
-        <aside class="bo-overview-media bo-reveal">
-          <figure class="bo-overview-image-wrap">
-            <!-- update the image path to your real boiler image -->
-            <img src="./static/images/boiler2.avif"
-                 alt="Industrial boiler installation in plant" />
-          </figure>
-        </aside>
-
-      </div>
-    </div>
-  </section>
-  <!-- ============ PROCESS ============ -->
-  <section class="bo-process" id="process">
-    <div class="bo-container">
-      <div class="bo-process-inner">
-
-        <div class="bo-process-intro bo-reveal">
-          <p class="bo-eyebrow">How we work</p>
-          <h2 class="bo-section-title">Boiler Project Workflow</h2>
-          <p class="bo-process-text">
-            We follow a structured approach—from load assessment and type selection through to supply coordination
-            and commissioning support—so your boiler installation is safe, efficient and compliant.
-          </p>
-          <p class="bo-process-text">
-            Our team can work with your consultants, mechanical contractors and facility team to integrate boilers
-            into existing plant rooms, new builds or retrofit projects.
-          </p>
-        </div>
-
-        <div class="bo-timeline bo-reveal">
-          <ol class="bo-timeline-list">
-            <li class="bo-timeline-item">
-              <div class="bo-timeline-icon">1</div>
-              <div class="bo-timeline-content">
-                <h3 class="bo-timeline-title">Thermal Load &amp; Site Assessment</h3>
-                <p class="bo-timeline-text">
-                  Review of process or building heating demand, operating pressure and temperature, duty cycles,
-                  available utilities, fuel options and installation constraints.
-                </p>
-              </div>
-            </li>
-            <li class="bo-timeline-item">
-              <div class="bo-timeline-icon">2</div>
-              <div class="bo-timeline-content">
-                <h3 class="bo-timeline-title">Boiler Type &amp; Configuration Selection</h3>
-                <p class="bo-timeline-text">
-                  Selection of water-tube, fire-tube or electric boiler; flow path, circulation method, pressure class
-                  and orientation to match performance and regulatory needs.
-                </p>
-              </div>
-            </li>
-            <li class="bo-timeline-item">
-              <div class="bo-timeline-icon">3</div>
-              <div class="bo-timeline-content">
-                <h3 class="bo-timeline-title">Engineering &amp; Supply Coordination</h3>
-                <p class="bo-timeline-text">
-                  Coordination with manufacturers for boiler packages, burners, pumps, feedwater systems, valves
-                  and controls—including documentation, QA and logistics.
-                </p>
-              </div>
-            </li>
-            <li class="bo-timeline-item">
-              <div class="bo-timeline-icon">4</div>
-              <div class="bo-timeline-content">
-                <h3 class="bo-timeline-title">Commissioning Support &amp; Ongoing Optimisation</h3>
-                <p class="bo-timeline-text">
-                  Support for commissioning, performance checks and safety interlocks, followed by ongoing guidance
-                  on efficiency improvements and lifecycle upgrades.
-                </p>
-              </div>
-            </li>
-          </ol>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ INDUSTRIES / APPLICATIONS ============ -->
-  <section class="bo-industries" id="applications">
-    <div class="bo-container">
-      <div class="bo-industries-header bo-reveal">
-        <p class="bo-eyebrow">Where boilers are used</p>
-        <h2 class="bo-section-title">Typical Boiler Applications</h2>
-        <p>
-          iEngineering supports boiler and steam/hot-water solutions across a wide range of industries,
-          from food production and chemicals to healthcare and power.
-        </p>
-      </div>
-
-      <div class="bo-industries-grid">
-        <article class="bo-industry-card bo-reveal">
-          <h3 class="bo-industry-title">Food &amp; Beverage Processing</h3>
-          <p class="bo-industry-text">
-            Process steam for cooking, sterilisation, CIP systems and packaging lines.
-          </p>
-        </article>
-
-        <article class="bo-industry-card bo-reveal">
-          <h3 class="bo-industry-title">Chemical &amp; Pharmaceutical</h3>
-          <p class="bo-industry-text">
-            Controlled steam and hot water for reactors, distillation and critical processes.
-          </p>
-        </article>
-
-        <article class="bo-industry-card bo-reveal">
-          <h3 class="bo-industry-title">Refineries &amp; Distilleries</h3>
-          <p class="bo-industry-text">
-            Boiler systems for distillation, stripping, heating and associated balance-of-plant.
-          </p>
-        </article>
-
-        <article class="bo-industry-card bo-reveal">
-          <h3 class="bo-industry-title">Sugar &amp; Paper Mills</h3>
-          <p class="bo-industry-text">
-            Steam for process, cogeneration, drying sections and mill-wide heating loads.
-          </p>
-        </article>
-
-        <article class="bo-industry-card bo-reveal">
-          <h3 class="bo-industry-title">Textiles &amp; Laundries</h3>
-          <p class="bo-industry-text">
-            Steam and hot water for washing, dyeing, pressing and finishing operations.
-          </p>
-        </article>
-
-        <article class="bo-industry-card bo-reveal">
-          <h3 class="bo-industry-title">Healthcare &amp; FMCG</h3>
-          <p class="bo-industry-text">
-            Boiler solutions for hospitals, sterilisation, HVAC systems and FMCG process lines.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ ABOUT ============ -->
-  <section id="about-us" class="cmms-contact-form-wrap">
-    <div class="cmms-contact-form-inner">
-      <p class="eyebrow-neplan-what-we-bring">About us</p>
-      <h2 class="title-meet-ieng-about">
-        About us – where vision meets execution!
-      </h2>
-      <p class="about-text-abou-ieng">
-        iEngineering is your trusted partner for advanced electrical and energy solutions across Australia, Fiji, and
-        India. We deliver high-quality hardware products—from switchboards and transformers to solar, BESS, EV charging
-        systems and industrial boilers—backed by expert engineering, reliable installation and dedicated local support.
-      </p>
-    </div>
-  </section>
-
-
-
   <!-- ============ MISSION / VISION / VALUES ============ -->
-<section class="bo-mvv-section" id="mission">
+  <section class="bo-mvv-section" id="mission">
   <div class="bo-container">
 
     <!-- Tabs -->
@@ -458,7 +482,6 @@
           </p>
         </div>
         <div class="bo-mvv-image">
-          <!-- UPDATE with your vision image (or reuse same) -->
           <img src="./static/images/vision.avif"
                alt="Strategic vision graphic" />
         </div>
@@ -485,8 +508,6 @@
   </div>
 </section>
 <!-- ===== SECTION 1: Our Journey ===== -->
-
-</section> 
 <section id="about-us" class="cmms-contact-form-wrap">
     <div class="cmms-contact-form-inner">
       <p class="eyebrow-neplan-what-we-bring">Our Journey</p>
@@ -494,25 +515,22 @@
       <p class="about-text-abou-ieng">
          Founded in 2013, iEngineering Australia delivers a comprehensive range of high-quality electrical and energy
       hardware solutions tailored for Australian and Pacific conditions. From design and engineering to manufacturing,
-      testing, and commissioning support, we ensure every product—whether switchboards, transformers, oil filtration
-      machines, solar systems, or EV chargers—is safe, reliable, and built to last.
+      testing, and commissioning support, we ensure every product whether switchboards, transformers, oil filtration
+      machines, solar systems, or EV chargers is safe, reliable, and built to last.
       </p>
     </div>
-  </section>
-
+</section>
 <!-- ===== SECTION 2: Where We Operate ===== -->
-
-
 <section id="about-us" class="cmms-contact-form-wrap">
-    <div class="cmms-contact-form-inner">
-      <p class="eyebrow-neplan-what-we-bring">Where We Operate</p>
-      
-      <p class="about-text-abou-ieng">
-       iEngineering Australia operates across Australia, Fiji, and India, delivering reliable technology and asset
-      management solutions to organisations of all sizes—from local enterprises to large multinational companies.
-      </p>
-    </div>
-  </section>
+  <div class="cmms-contact-form-inner">
+    <p class="eyebrow-neplan-what-we-bring">Where We Operate</p>
+    
+    <p class="about-text-abou-ieng">
+      iEngineering Australia operates across Australia, Fiji, and India, delivering reliable technology and asset
+      management solutions to organisations of all sizes from local enterprises to large multinational companies.
+    </p>
+  </div>
+</section>
 
 <!-- ===== SECTION 3: Locations ===== -->
 <section class="ieng-locations" id="locations">
@@ -523,7 +541,6 @@
       <article class="ieng-loc-card ieng-loc-card--au">
         <header class="ieng-loc-head">
           <span class="ieng-loc-icon" aria-hidden="true">
-            <!-- pin icon -->
             <svg viewBox="0 0 24 24" width="20" height="20">
               <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"
                 fill="currentColor" />
@@ -581,7 +598,7 @@
 
         <p class="ieng-loc-row"><strong>Phone:</strong> +679 9488589</p>
         <p class="ieng-loc-row"><strong>Email:</strong> <a href="mailto:enquiries@iengaust.com.au">enquiries@iengaust.com.au</a></p>
-        <p class="ieng-loc-address">Lot 17, River Drive, Pacific Harbour, Navua, Suva, Fiji.</p>
+        <p class="ieng-loc-address">Suva, Fiji.</p>
 
         <a class="ieng-loc-btn" target="_blank" rel="noopener"
            href="https://www.google.com/maps/search/Lot+17,+River+Drive+Pacific+Harbour+Navua+Suva+Fiji/">
@@ -592,12 +609,82 @@
 
   </div>
 </section>
+    <!-- CONTACT -->
+    <section id="contact">
+      {% include "components/contact_block.html" with form_only=True %}
+    </section>
+    <section class="fu-section fu-section-soft" id="faq">
+      <div class="fu-container">
+        <div class="fu-section-head fu-reveal">
+          <p class="fu-eyebrow">FAQ</p>
+          <h2 class="fu-h2">Common questions</h2>
+          <p class="fu-sub">Quick answers for operations, safety, and planning.</p>
+        </div>
 
+        <!-- MODERN FAQ -->
+        <div class="fu-faq fu-reveal">
 
-  <!-- CONTACT -->
-  <section id="contact">
-    {% include "components/contact_block.html" with form_only=True %}
-  </section>
+          <div class="fu-qa">
+            <button class="fu-faq-q" aria-expanded="false" type="button">
+              <span>How long does a treatment typically take?</span>
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="fu-faq-a">
+              Typically, facilities are maintained at 50–60°C for 24–48 hours, depending on pests, layout, insulation and airflow distribution.
+            </div>
+          </div>
+
+          <div class="fu-qa">
+            <button class="fu-faq-q" aria-expanded="false" type="button">
+              <span>Why do we need recirculation fans?</span>
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="fu-faq-a">
+              Recirculation prevents temperature stratification and reduces cold spots improving uniformity and treatment reliability.
+            </div>
+          </div>
+
+          <div class="fu-qa">
+            <button class="fu-faq-q" aria-expanded="false" type="button">
+              <span>Is this suitable for food facilities?</span>
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="fu-faq-a">
+              Heat treatment is widely used as a chemical-free option to support hygiene and avoid residues (always follow site QA and safety procedures).
+            </div>
+          </div>
+
+          <div class="fu-qa">
+            <button class="fu-faq-q" aria-expanded="false" type="button">
+              <span>Can the system be moved between factories?</span>
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="fu-faq-a">
+              Yes, modular plug &amp; play design supports moving equipment between sites and improving utilisation.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="fu-cta-strip fu-reveal">
+          <div>
+            <h3>Need a site-specific plan?</h3>
+            <p>Share facility size, layout, and target pests we’ll recommend the right setup approach.</p>
+          </div>
+          <div class="fu-cta-strip-actions">
+            <a class="fu-btn fu-btn-primary js-open-demo" href="#contact">Submit Inquiry</a>
+            {% comment %} <a class="fu-btn fu-btn-ghost"
+               href="https://ieng.tech/static/images/flyer/hardware/supplies/fumigation.pdf"
+               target="_blank" rel="noopener">
+              Download Flyer
+            </a> {% endcomment %}
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
 
   {% include 'footer.html' %}
 
@@ -608,7 +695,58 @@
   <script defer src="{% static 'js/main.js' %}"></script>
   <script defer src="{% static 'js/neplan.js' %}"></script>
 
-  <!-- Simple reveal script for .bo-reveal -->
+  <!-- Reveal + FAQ -->
+  <script>
+    // Reveal animation
+    (function () {
+      const els = document.querySelectorAll(".fu-reveal");
+      if (!("IntersectionObserver" in window)) {
+        els.forEach((el) => el.classList.add("is-visible"));
+        return;
+      }
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("is-visible");
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+      els.forEach((el) => io.observe(el));
+    })();
+
+    // FAQ modern accordion
+    (function () {
+      const items = document.querySelectorAll(".fu-qa");
+      if (!items.length) return;
+
+      items.forEach((item) => {
+        const btn = item.querySelector(".fu-faq-q");
+        const ans = item.querySelector(".fu-faq-a");
+
+        btn.addEventListener("click", () => {
+          const isOpen = item.classList.contains("is-open");
+
+          // close all
+          items.forEach((i) => {
+            i.classList.remove("is-open");
+            i.querySelector(".fu-faq-q").setAttribute("aria-expanded", "false");
+            i.querySelector(".fu-faq-a").style.maxHeight = null;
+          });
+
+          // open current
+          if (!isOpen) {
+            item.classList.add("is-open");
+            btn.setAttribute("aria-expanded", "true");
+            ans.style.maxHeight = ans.scrollHeight + "px";
+          }
+        });
+      });
+    })();
+  </script>
   <script>
     (function () {
       const els = document.querySelectorAll(".bo-reveal");
