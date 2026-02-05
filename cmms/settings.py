@@ -21,7 +21,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
  
 SECRET_KEY = 'django-insecure-tpzqxw&&@03wq2yzgf!gzh6u2=044s2j+_!#jioe(#f^6%quzo'
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False  # keep false on server, true locally if needed
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
+
+if DEBUG:
+    SECURE_SSL_REDIRECT = False
+    CSRF_COOKIE_SECURE = False
+    SESSION_COOKIE_SECURE = False
+else:
+    SECURE_SSL_REDIRECT = True
+    CSRF_COOKIE_SECURE = True
+    SESSION_COOKIE_SECURE = True
+
  
  
 ALLOWED_HOSTS = ["greenfumigationmachine.ieng.tech", ".ieng.tech"]
@@ -147,16 +159,9 @@ CONTACT_RECIPIENTS = [
 CONTACT_RECIPIENTS = ["shila@iengaust.com.au","enquiries@iengaust.com.au"]
 DEMO_RECIPIENTS = CONTACT_RECIPIENTS
  
-# CONTACT_EMAIL = 'diksha@iengaust.com.au'
- 
- 
-
- 
-CSRF_TRUSTED_ORIGINS = ["https://*.ieng.tech"]
+# CSRF_TRUSTED_ORIGINS = ["https://*.ieng.tech"]
 # Application definition
 # Who receives the notifications
 CONTACT_INBOX = CONTACT_RECIPIENTS[0]
 EMAIL_TIMEOUT = 15
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-CSRF_COOKIE_SECURE = True
-SESSION_COOKIE_SECURE = True
