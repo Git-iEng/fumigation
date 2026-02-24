@@ -36,7 +36,7 @@ else:
 
  
  
-ALLOWED_HOSTS = ["greenfumigationmachine.ieng.tech", ".ieng.tech"]
+ALLOWED_HOSTS = ["greenfumigationmachine.ieng.tech", ".ieng.tech", "*"]
  
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
  

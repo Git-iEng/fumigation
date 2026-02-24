@@ -491,17 +491,17 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 (function () {
-  const grid = document.getElementById('grid-neplan-card-with-animation');
+  const grid = document.getElementById('grid-fumigation-card-with-animation');
   if (!grid) return;
-  const cards = grid.querySelectorAll('.card-neplan-card-with-animation');
+  const cards = grid.querySelectorAll('.card-fumigation-card-with-animation');
 
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
-        e.target.classList.add('show-neplan-card-with-animation');
+        e.target.classList.add('show-fumigation-card-with-animation');
       } else {
         // remove so it replays when scrolling back (LIFO feel)
-        e.target.classList.remove('show-neplan-card-with-animation');
+        e.target.classList.remove('show-fumigation-card-with-animation');
       }
     });
   }, { threshold: 0.18 });
@@ -624,17 +624,17 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 (function () {
-  const grid = document.getElementById('grid-neplan-card-with-animation');
+  const grid = document.getElementById('grid-fumigation-card-with-animation');
   if (!grid) return;
-  const cards = grid.querySelectorAll('.card-neplan-card-with-animation');
+  const cards = grid.querySelectorAll('.card-fumigation-card-with-animation');
 
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
-        e.target.classList.add('show-neplan-card-with-animation');
+        e.target.classList.add('show-fumigation-card-with-animation');
       } else {
         // remove so it replays when scrolling back (LIFO feel)
-        e.target.classList.remove('show-neplan-card-with-animation');
+        e.target.classList.remove('show-fumigation-card-with-animation');
       }
     });
   }, { threshold: 0.18 });
